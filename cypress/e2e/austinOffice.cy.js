@@ -4,6 +4,9 @@ import { austinPage } from "../pages/austinPage"
 describe ("Navidate to Austin Office", () => {
     before(() => {
         cy.visit("https://inhouse.decemberlabs.com/")
+        //Verify URL and title
+        cy.url().should('eq', 'https://inhouse.decemberlabs.com/');
+        cy.title().should('eq', 'December Labs: UX/UI Design and Mobile App & Web Development');
     })
 
     it("Verify URL, Title in home page and bla bla", () => {

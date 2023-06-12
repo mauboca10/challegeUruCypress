@@ -1,4 +1,4 @@
-# PARAMO TECHNOLOGIES FrontEnd Automation Testing using Cypress.io
+# FrontEnd Automation Testing using Cypress.io
 
 Cypress.io is a **free** basic tool that can be used in automation testing through JavaScript coding.
 Cypress is a powerful tool (so they say), that can keep a step-by-step before and after every event.
@@ -16,8 +16,8 @@ Cypress is a powerful tool (so they say), that can keep a step-by-step before an
 If its your first time to clone *automation*, you will need to install all dependencies required by typing "```npm install```" in terminal (same folder you find package.json)  
 In order to run Cypress GUI, using terminal go to <repo folder>/automation/web where you can type "```npx cypress open```", that will start Cypress GUI, were you can see all Spec(s) that you can run.  
 
-Once Cypress GUI shows up you will get see all test specs which exist inside "integration" folder, any extra files such as images to be used in test, or input file and so on will exist inside "fixtures" folder.  
-"Support" folder will contains any customized functions that can be used by cypress in testing, so we create new cypress command in support folder ```.js``` file and it will be picked up by cypress and used on the go.
+Once Cypress GUI shows up you will see two options, you hace to select E2E Testing and then select the Chrome browser.
+Then you will get see all test specs which exist inside "cypress/e2e" folder.
 
 Once you select a test Spec to run, Cypress will open a new chrome browser, with 2 frames.
 The right frame will have the tests and all event steps, the left is the actual test running visually.
@@ -34,4 +34,8 @@ The reports of the executions are saved in the file /mochawesome-report after th
 ## Tests
 ---
 
-There are two test. One for register new user and the other test is for verify a user nickname.
+There are one test that verify Title and URL in the Home Page and in the Austin Office Page.
+
+## POSSIBLE IMPROVEMENT
+Create a command that works with the iframe from the Austin office page.
+
